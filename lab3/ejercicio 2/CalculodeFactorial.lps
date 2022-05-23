@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="CalculodeFactorial.pas"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="8"/>
+        <CursorPos X="36" Y="42"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="3">
+      <Position>
+        <Filename Value="CalculodeFactorial.pas"/>
+        <Caret Line="42" Column="7" TopLine="8"/>
+      </Position>
+      <Position>
+        <Filename Value="CalculodeFactorial.pas"/>
+        <Caret Line="26" Column="32" TopLine="17"/>
+      </Position>
+      <Position>
+        <Filename Value="CalculodeFactorial.pas"/>
+        <Caret Line="23" Column="24" TopLine="12"/>
+      </Position>
+      <Position>
+        <Filename Value="CalculodeFactorial.pas"/>
+        <Caret Line="46" Column="19" TopLine="26"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
