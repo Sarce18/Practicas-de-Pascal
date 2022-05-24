@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="SecuenciadeNumeros.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="47"/>
+        <CursorPos X="33" Y="61"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="SecuenciadeNumeros.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="37"/>
+        <CursorPos X="45" Y="7"/>
+        <UsageCount Value="10"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="9">
+      <Position>
+        <Filename Value="SecuenciadeNumeros.lpr"/>
+        <Caret Column="9"/>
+      </Position>
+      <Position>
+        <Filename Value="SecuenciadeNumeros.lpr"/>
+        <Caret Line="99" Column="2" TopLine="92"/>
+      </Position>
+      <Position>
+        <Filename Value="SecuenciadeNumeros.lpr"/>
+        <Caret Line="14" Column="18" TopLine="5"/>
+      </Position>
+      <Position>
+        <Filename Value="SecuenciadeNumeros.lpr"/>
+        <Caret Line="7" Column="63"/>
+      </Position>
+      <Position>
+        <Filename Value="SecuenciadeNumeros.lpr"/>
+        <Caret Line="97" Column="7" TopLine="87"/>
+      </Position>
+      <Position>
+        <Filename Value="SecuenciadeNumeros.lpr"/>
+        <Caret Line="9" Column="50" TopLine="2"/>
+      </Position>
+      <Position>
+        <Filename Value="SecuenciadeNumeros.lpr"/>
+        <Caret Line="26" Column="7" TopLine="16"/>
+      </Position>
+      <Position>
+        <Filename Value="SecuenciadeNumeros.lpr"/>
+        <Caret Line="31" Column="14" TopLine="21"/>
+      </Position>
+      <Position>
+        <Filename Value="SecuenciadeNumeros.lpr"/>
+        <Caret Line="44" Column="19" TopLine="28"/>
+      </Position>
+      <Position>
+        <Filename Value="SecuenciadeNumeros.lpr"/>
+        <Caret Line="42" Column="19" TopLine="30"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
