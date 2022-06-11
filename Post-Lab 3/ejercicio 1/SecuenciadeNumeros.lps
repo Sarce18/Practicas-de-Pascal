@@ -8,18 +8,27 @@
       <Unit>
         <Filename Value="SecuenciadeNumeros.lpr"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="55"/>
+        <TopLine Value="53"/>
         <CursorPos X="33" Y="61"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="24"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="SecuenciadeNumeros.pas"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="2"/>
         <TopLine Value="54"/>
         <CursorPos X="47" Y="19"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\..\Downloads\FacturaVersion2Especial.pas"/>
+        <UnitName Value="Facturas_Supermercadp_ELCampo"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="7"/>
+        <CursorPos X="129" Y="4"/>
+        <UsageCount Value="11"/>
         <Loaded Value="True"/>
       </Unit>
     </Units>

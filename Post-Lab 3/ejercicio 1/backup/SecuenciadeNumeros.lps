@@ -9,17 +9,18 @@
         <Filename Value="SecuenciadeNumeros.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="47"/>
+        <TopLine Value="55"/>
         <CursorPos X="33" Y="61"/>
         <UsageCount Value="22"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="SecuenciadeNumeros.pas"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="37"/>
-        <CursorPos X="45" Y="7"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="54"/>
+        <CursorPos X="47" Y="19"/>
         <UsageCount Value="10"/>
+        <Loaded Value="True"/>
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="9">
