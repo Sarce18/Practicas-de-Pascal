@@ -19,7 +19,7 @@ Var
 
 
   Casos : Array [1..23,1..12,1..2] Of Integer;
-  Mujeres_Contg_Est: Array [1..5] Of integer;
+  Mujeres_Contg_Est: Array [1..23] Of integer;
   i, j, k, mes, hombres_Contg_Mes, Acum_estado_Contg,
   Salv_Acum_estado_Contg: Integer;
   mayor: string [16];
@@ -42,7 +42,7 @@ Begin
 
   //Limpieza de la matriz Mujeres_Contg_Est 
 
-  For i := 1 To 5 Do
+  For i := 1 To 23 Do
     Mujeres_Contg_Est[i] := 0;
 
 
@@ -67,6 +67,7 @@ Begin
   //Cantidad de hombres contagiados durante un mes dado
 
   Writeln (
+
 
 
 
