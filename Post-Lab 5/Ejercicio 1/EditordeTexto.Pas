@@ -34,8 +34,7 @@ Begin
       1:
          Begin
            clrscr;
-           Writeln ('La longitud de su cadena de caracteres es: ', length (Texto
-           ));
+           Writeln ('La longitud de su cadena de caracteres es: ', length (Texto));
 
            Readkey;
          End;
@@ -60,6 +59,8 @@ Begin
            writeln ();
            Writeln ('Cadena nueva: ');
            Writeln (TextoAux);
+
+           Texto := TextoAux;
 
            Readkey;
 
@@ -108,6 +109,8 @@ Begin
            Writeln ('Cadena nueva: ');
            Writeln (TextoAux);
 
+           Texto := TextoAux;
+
            readkey;
          End;
 
@@ -136,6 +139,8 @@ Begin
            Writeln ('Cadena nueva: ');
            Writeln (TextoAux);
 
+           Texto := TextoAux;
+
            Readkey;
 
          End;
@@ -161,6 +166,8 @@ Begin
            Writeln ();
            Writeln ('Cadena nueva: ');
            Writeln (TextoAux);
+
+           Texto := TextoAux;
 
            Readkey;
          End;
