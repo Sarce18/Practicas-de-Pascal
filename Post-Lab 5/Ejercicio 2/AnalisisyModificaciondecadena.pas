@@ -20,10 +20,12 @@ Begin
   Writeln ('Ingrese una letra, para buscar las palabras que la contengan: ');
   Readln (Letra);
 
+  cadena := cadena + ' ';
+
   //Proceso para buscar una palabra en la cadena
 
   For i:= 1 To length (Cadena) Do
-    If (cadena[i] <> ' ') Then
+    If (cadena[i] <> ' ')  Then
       palabra := palabra + lowercase (cadena[i])
     Else
       Begin
