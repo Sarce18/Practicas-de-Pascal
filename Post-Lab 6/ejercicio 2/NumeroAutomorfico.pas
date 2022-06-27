@@ -6,12 +6,25 @@ Uses Crt, math;
 Var 
   Numero, Potencia, resto: Integer;
 
-Function Elevar (N,P: integer): integer;
+  //Funcion para elevar un numero dado a una potencia dada
+
+Function Elevar (N,P: integer): longint;
 Begin
 
   elevar := N**P;
 
 End;
+
+//Funcion para obtener el resto
+
+Function Resto_NE(NE, Divi: integer): integer;
+Begin
+
+  Resto_NE := NE Mod Divi;
+
+End;
+
+//Procedimiento para descomponer el numero base y llamar a las 2 funciones anteriores
 
 Procedure Descomposicion(Num, Pot: integer; Var Rest: integer);
 
@@ -21,7 +34,6 @@ Begin
   Cant_Dig := 1;
   Num_Elev := Elevar (Num, Pot);
 
-
   While (Num Div 10 <> 0) Do
     Begin
       Cant_Dig := Cant_Dig + 1;
@@ -30,9 +42,11 @@ Begin
 
   divisor := 10**Cant_Dig;
 
-  Rest := Num_Elev Mod divisor;
+  Rest := Resto_NE (Num_Elev, divisor);
 
 End;
+
+//Programa principal
 
 Begin
   Writeln ('Ingrese el numero entero a elevar:');
@@ -41,6 +55,8 @@ Begin
   Readln (Potencia);
 
   Descomposicion (Numero, Potencia, Resto);
+
+  //Determinando si es automorfico o no
 
   If (Resto = numero) Then
     Begin

@@ -35,10 +35,10 @@ End;
 
 //Procedimineto para el calculo de las raices reales
 
-Procedure raicesReales(aa,bb,cc: real; Var x1,x2: real);
+Procedure raicesReales(aa,bb,dd: real; Var x1,x2: real);
 Begin
-  x1 := (-bb + sqrt (d))/(2*aa);
-  x2 := (-bb - sqrt (d))/(2*aa);
+  x1 := (-bb + sqrt (dd))/(2*aa);
+  x2 := (-bb - sqrt (dd))/(2*aa);
 End;
 
 //Procedimiento para el calculo de las raices complejas
@@ -48,6 +48,8 @@ Begin
   J := -bb/(2*aa);
   Q := sqrt (Abs (sqr(bb)-4*aa*cc))/(2*aa);
 End;
+
+//Programa principal
 
 Begin
   Writeln ('Ingrese los valores de A, B y C, segun la formula Ax^2+Bx+C=0:');
@@ -79,35 +81,35 @@ Begin
 
         If (d > 0)Then
           Begin
-            raicesReales (a,b,c,RaizR1,RaizR2);
+            raicesReales (a,b,d,RaizR1,RaizR2);
             clrscr;
             Writeln ('Existen dos raices reales.');
             Writeln ('Valor de la primera raiz (x1): ', RaizR1:0:2);
             Writeln ('Valor de la segunda raiz (x2): ', RaizR2:0:2);
             readkey;
-          End
-        Else
+          End;
 
-          //Raices complejas
+        //Raices complejas
 
-          If (d < 0)Then
-            Begin
-              RaicesComplejas (a,b,c,RaizCJ,NumIQ);
-              clrscr;
-              Writeln ('Existen dos raices complejas.');
-              Writeln ('Valor de la primera raiz (x1): ', RaizCJ:0:2, ' + ', NumIQ:0:2, 'i');
-              writeln ('Valor de la segunda raiz (x2): ', RaizCJ:0:2, ' - ', NumIQ:0:2, 'i');
-            End
-        Else
+        If (d < 0)Then
+          Begin
+            RaicesComplejas (a,b,c,RaizCJ,NumIQ);
+            clrscr;
+            Writeln ('Existen dos raices complejas.');
+            Writeln ('Valor de la primera raiz (x1): ', RaizCJ:0:2, ' + ', NumIQ:0:2, 'i');
+            writeln ('Valor de la segunda raiz (x2): ', RaizCJ:0:2, ' - ', NumIQ:0:2, 'i');
+            Readkey;
+          End;
 
-          //Raiz unica
+        //Raiz unica
 
-          If (d = 0) Then
-            Begin
-              clrscr;
-              Writeln ('Existe una raiz real.');
-              writeln ('Valor de la raiz: ', RaizU(a,b,c,2): 0: 2)
-            End
+        If (d = 0) Then
+          Begin
+            clrscr;
+            Writeln ('Existe una raiz real.');
+            writeln ('Valor de la raiz: ', RaizU(a,b,c,2): 0: 2);
+            Readkey;
+          End;
 
       End;
 
