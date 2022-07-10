@@ -59,44 +59,41 @@ Begin
         //si el ciudadano es venezolano se verifica si puede o no prestar servicio militrar
 
         If (Nacionalidad = 'V') Or (Nacionalidad = 'v') Then
-          Begin
+          If (Edad >= 18) And (Edad <= 30) Then
+            Begin
 
-            //si el ciudadano es hombre se realizan preguntas adicionales
+              //si el ciudadano es hombre se realizan preguntas adicionales
 
-            If (Sexo = 'M') Or (Sexo = 'm') Then
-              Begin
-                write ('El ciudadano nro ', i, ' posee pies planos (1: Si ; 2: No): ');
-                readln (Hombre.PiesP);
-                write ('El ciudadano nro ', i, ' ha prestado servicio militar (1: Si ; 2: No): ');
-                readln (Hombre.SM_Retirado);
-                write ('El ciudadano nro ', i, ' esta prestando servicio militar actualmente (1: Si ; 2: No): ');
-                readln (Hombre.SM_Actual);
-              End;
+              If (Sexo = 'M') Or (Sexo = 'm') Then
+                Begin
+                  write ('El ciudadano nro ', i, ' posee pies planos (1: Si ; 2: No): ');
+                  readln (Hombre.PiesP);
+                  write ('El ciudadano nro ', i, ' ha prestado servicio militar (1: Si ; 2: No): ');
+                  readln (Hombre.SM_Retirado);
+                  write ('El ciudadano nro ', i, ' esta prestando servicio militar actualmente (1: Si ; 2: No): ');
+                  readln (Hombre.SM_Actual);
+                End;
 
-            //si el ciudadano puede prestar servicio militar, se guardan los datos
+              //si el ciudadano puede prestar servicio militar, se guardan los datos
 
-            With ServM [cont] Do
-              Begin
-                If (Sexo = 'F') Or (Sexo = 'f') Then
-                  Begin
-                    If (Edad >= 18) And (Edad <= 30) Then
-                      Begin
-                        Nombre := NYA;
-                        CedulaSM := Cedula;
-                        Cont := Cont + 1;
-                      End;
-                  End
-                Else
-                  If (Sexo = 'M') Or (Sexo = 'm') Then
-                    If (Hombre.PiesP = '2') And (Hombre.SM_Retirado = '2') And (Hombre.SM_Actual = '2') And (Edad >= 18)
-                       And (Edad <= 30) Then
-                      Begin
-                        Nombre := NYA;
-                        CedulaSM := Cedula;
-                        Cont := Cont + 1;
-                      End;
-              End;
-          End;
+              With ServM [cont] Do
+                Begin
+                  If (Sexo = 'F') Or (Sexo = 'f') Then
+                    Begin
+                      Nombre := NYA;
+                      CedulaSM := Cedula;
+                      Cont := Cont + 1;
+                    End
+                  Else
+                    If (Sexo = 'M') Or (Sexo = 'm') Then
+                      If (Hombre.PiesP = '2') And (Hombre.SM_Retirado = '2') And (Hombre.SM_Actual = '2') Then
+                        Begin
+                          Nombre := NYA;
+                          CedulaSM := Cedula;
+                          Cont := Cont + 1;
+                        End;
+                End;
+            End;
       End;
 
   //salida
