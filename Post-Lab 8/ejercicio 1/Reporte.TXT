@@ -1,4 +1,6 @@
 ******** Reporte de ciudadanos ********
-Fecha: 20/7/2022
-Hora: 21:27:50
+Fecha: 24/7/2022
+Hora: 18:19:28
 ******** Lista ********
+Cesar Barreto     Villa asia
+Carlos marcano     Isla dorada

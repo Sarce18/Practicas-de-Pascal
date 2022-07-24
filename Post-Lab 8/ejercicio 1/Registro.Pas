@@ -19,15 +19,15 @@ Type
 Var 
   Registro: file Of datosC;
   Reporte: text;
-  Opcion, Opcion_Menu, i: integer;
+  Opcion, Opcion_Menu, Anio_Min, Anio_Max: integer;
   datos: datosC;
-  h, m, s, cent: Word;
   FechayHora: longint;
   Datos_Fecha: Datetime;
   Letra: Char;
-  Anio_Min, Anio_Max: integer;
 
 Begin
+
+  //Inicializacion de los archivos
 
   Assign (Registro, 'Registro.TXT');
   Assign (Reporte, 'Reporte.TXT');
@@ -35,16 +35,19 @@ Begin
   If Not (Fileexists ('Registro.TXT')) Then
     Rewrite (Registro);
 
-
+  //Menu
 
   Repeat
-
+    clrscr;
     Writeln ('Seleccione una opcion: ');
     Writeln ('1. Ingresar datos de ciudadanos.');
     Writeln ('2. Buscar nombres que comiencen con una letra y generar reporte.');
+    Writeln ('3. Salir.');
     Readln (Opcion_Menu);
 
     Case Opcion_Menu Of 
+
+      //Opcion para registrar los datos de los ciudadanos
 
       1:
          Begin
@@ -57,16 +60,16 @@ Begin
                Readln (Nombre);
                Write ('Ingrese la cedula del ciudadano: ');
                Readln (Cedula);
-               Write ('Ingrese la fecha de nacimiento del ciudadano: ');
-               Readln (Fn.Dia);
-               Readln (FN.Mes);
-               Readln (FN.Anio);
+               Writeln ('Ingrese la fecha de nacimiento del ciudadano (aaaa/mm/dd): ');
+               Readln (FN.Anio, FN.Mes, Fn.Dia);
                Write ('Ingrese el sexo del ciudadano (M: Masculino ; F: Femenino): ');
                Readln (Sexo);
                Write ('Ingrese la direccion de vivienda del ciudadano: ');
                Readln (Direccion);
                Write ('Ingrese la ciudad de residencia del ciudadano: ');
                Readln (Ciudad);
+
+               //Guardando los datos en el archivo
 
                Write (Registro, datos);
                write ();
@@ -75,9 +78,9 @@ Begin
 
              Until (Opcion = 2);
            Close (Registro);
-
-
          End;
+
+      //Opcion para generar el reporte 
 
       2:
          Begin
@@ -102,23 +105,18 @@ Begin
              Begin
                Read (Registro, datos);
 
+               //determinando si cumple con los requisitos
+
                If (Datos.Nombre[1] = letra) Then
                  If (Datos.Fn.Anio >=Anio_Min) And (Datos.Fn.Anio <= Anio_Max) Then
-                   writeln (Reporte, Datos.nombre, '     ', Datos.cedula);
-
-
-
+                   writeln (Reporte, Datos.nombre, '     ', Datos.Direccion);
              End;
            Close (Reporte);
+           close (Registro);
 
          End;
     End;
 
   Until (Opcion_Menu = 3);
-
-  close (Registro);
-
-
-
 
 End.
