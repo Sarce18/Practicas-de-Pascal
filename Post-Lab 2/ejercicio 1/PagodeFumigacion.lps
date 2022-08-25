@@ -8,9 +8,17 @@
       <Unit>
         <Filename Value="PagodeFumigacion.pas"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <CursorPos X="74" Y="3"/>
+        <CursorPos X="50" Y="14"/>
         <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\Post-Lab 8\ejercicio 1\Registro.Pas"/>
+        <UnitName Value="RegistroCiudadanos"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="10"/>
+        <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit>
     </Units>

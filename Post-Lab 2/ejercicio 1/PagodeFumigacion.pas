@@ -11,7 +11,7 @@ begin
   Precio:= 0;
   Monto_Descuento1:= 0;
 
-  Writeln ('Ingrese el nombre y apellido del granjero:');
+  Writeln ('Ingrese el nombre y apellido del grañjero:');
   readln (Nombre);
   Writeln ('Ingrese el tipo de fumigacion deseada. Luego indique la cantidad de hectareas que desea fumigar:');
   Writeln ('1. Fumigacion contra malas hierbas, $10 por hectarea.');

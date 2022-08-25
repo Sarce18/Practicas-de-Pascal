@@ -28,7 +28,6 @@ Var
 Begin
 
   //Inicializacion de los archivos
-
   Assign (Registro, 'Registro.TXT');
   Assign (Reporte, 'Reporte.TXT');
 

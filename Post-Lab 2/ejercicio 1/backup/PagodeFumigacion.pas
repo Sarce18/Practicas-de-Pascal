@@ -38,7 +38,7 @@ begin
 
   Monto_Parcial:= Num_Hectareas * Precio;
 
-  //Determinando el monto total a pagar
+  //Determinando la formula a usar para calcular el monto total a pagar
 
   If (Num_Hectareas < 1000) and (Monto_Parcial < 3000) then
      Monto_Total:= Monto_Parcial
